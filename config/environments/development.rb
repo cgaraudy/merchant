@@ -1,10 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-6.9.3-Q16/convert"
 
-  # Tell Paperclip where to find ImageMagick
-  # Paperclip.options[:command_path] = "/c/WINDOWS/system32/"
-  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
-
+Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
